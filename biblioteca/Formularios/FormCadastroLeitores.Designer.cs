@@ -31,14 +31,14 @@
             btCancelar = new Button();
             btSalvar = new Button();
             label4 = new Label();
-            txtQtdDisponivel = new TextBox();
+            this.txtMatricula = new TextBox();
             label2 = new Label();
-            txtTitulo = new TextBox();
+            this.txtNome = new TextBox();
             label1 = new Label();
             label5 = new Label();
-            textBox1 = new TextBox();
+            this.txtCurso = new TextBox();
             label6 = new Label();
-            textBox2 = new TextBox();
+            txtTelefone = new TextBox();
             SuspendLayout();
             // 
             // btCancelar
@@ -69,13 +69,13 @@
             label4.TabIndex = 25;
             label4.Text = "Matricula:";
             // 
-            // txtQtdDisponivel
+            // txtMatricula
             // 
-            txtQtdDisponivel.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtQtdDisponivel.Location = new Point(539, 151);
-            txtQtdDisponivel.Name = "txtQtdDisponivel";
-            txtQtdDisponivel.Size = new Size(249, 38);
-            txtQtdDisponivel.TabIndex = 24;
+            this.txtMatricula.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            this.txtMatricula.Location = new Point(539, 151);
+            this.txtMatricula.Name = "txtMatricula";
+            this.txtMatricula.Size = new Size(249, 38);
+            this.txtMatricula.TabIndex = 24;
             // 
             // label2
             // 
@@ -87,13 +87,13 @@
             label2.TabIndex = 21;
             label2.Text = "Nome:";
             // 
-            // txtTitulo
+            // txtNome
             // 
-            txtTitulo.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtTitulo.Location = new Point(12, 151);
-            txtTitulo.Name = "txtTitulo";
-            txtTitulo.Size = new Size(504, 38);
-            txtTitulo.TabIndex = 20;
+            this.txtNome.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            this.txtNome.Location = new Point(12, 151);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new Size(504, 38);
+            this.txtNome.TabIndex = 20;
             // 
             // label1
             // 
@@ -115,13 +115,13 @@
             label5.TabIndex = 29;
             label5.Text = "Curo:";
             // 
-            // textBox1
+            // txtCurso
             // 
-            textBox1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(12, 233);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(504, 38);
-            textBox1.TabIndex = 28;
+            this.txtCurso.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            this.txtCurso.Location = new Point(12, 233);
+            this.txtCurso.Name = "txtCurso";
+            this.txtCurso.Size = new Size(504, 38);
+            this.txtCurso.TabIndex = 28;
             // 
             // label6
             // 
@@ -133,13 +133,13 @@
             label6.TabIndex = 31;
             label6.Text = "Telefone:";
             // 
-            // textBox2
+            // txtTelefone
             // 
-            textBox2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(539, 233);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(249, 38);
-            textBox2.TabIndex = 30;
+            txtTelefone.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtTelefone.Location = new Point(539, 233);
+            txtTelefone.Name = "txtTelefone";
+            txtTelefone.Size = new Size(249, 38);
+            txtTelefone.TabIndex = 30;
             // 
             // FormCadastroLeitores
             // 
@@ -147,15 +147,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(label6);
-            Controls.Add(textBox2);
+            Controls.Add(txtTelefone);
             Controls.Add(label5);
-            Controls.Add(textBox1);
+            Controls.Add(this.txtCurso);
             Controls.Add(btCancelar);
             Controls.Add(btSalvar);
             Controls.Add(label4);
-            Controls.Add(txtQtdDisponivel);
+            Controls.Add(this.txtMatricula);
             Controls.Add(label2);
-            Controls.Add(txtTitulo);
+            Controls.Add(this.txtNome);
             Controls.Add(label1);
             Name = "FormCadastroLeitores";
             Text = "CadastroLeitores";
@@ -168,13 +168,13 @@
         private Button btCancelar;
         private Button btSalvar;
         private Label label4;
-        private TextBox txtQtdDisponivel;
+        private TextBox txtMatricula;
         private Label label2;
-        private TextBox txtTitulo;
+        private TextBox txtNome;
         private Label label1;
         private Label label5;
-        private TextBox textBox1;
+        private TextBox txtCurso;
         private Label label6;
-        private TextBox textBox2;
+        private TextBox txtTelefone;
     }
 }

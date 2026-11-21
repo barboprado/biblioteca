@@ -29,14 +29,16 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            this.txtTitulo = new TextBox();
+            txtTitulo = new TextBox();
             label2 = new Label();
             label3 = new Label();
-            this.txtAutor = new TextBox();
+            txtAutor = new TextBox();
             label4 = new Label();
-            this.txtQtdDisponivel = new TextBox();
+            txtQtdDisponivel = new TextBox();
             btSalvar = new Button();
             btCancelar = new Button();
+            label5 = new Label();
+            txtGenero = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -51,11 +53,11 @@
             // 
             // txtTitulo
             // 
-            this.txtTitulo.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.txtTitulo.Location = new Point(12, 149);
-            this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new Size(776, 38);
-            this.txtTitulo.TabIndex = 11;
+            txtTitulo.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtTitulo.Location = new Point(12, 149);
+            txtTitulo.Name = "txtTitulo";
+            txtTitulo.Size = new Size(776, 38);
+            txtTitulo.TabIndex = 11;
             // 
             // label2
             // 
@@ -79,11 +81,11 @@
             // 
             // txtAutor
             // 
-            this.txtAutor.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.txtAutor.Location = new Point(12, 231);
-            this.txtAutor.Name = "txtAutor";
-            this.txtAutor.Size = new Size(504, 38);
-            this.txtAutor.TabIndex = 13;
+            txtAutor.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtAutor.Location = new Point(12, 231);
+            txtAutor.Name = "txtAutor";
+            txtAutor.Size = new Size(504, 38);
+            txtAutor.TabIndex = 13;
             // 
             // label4
             // 
@@ -97,11 +99,11 @@
             // 
             // txtQtdDisponivel
             // 
-            this.txtQtdDisponivel.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.txtQtdDisponivel.Location = new Point(539, 231);
-            this.txtQtdDisponivel.Name = "txtQtdDisponivel";
-            this.txtQtdDisponivel.Size = new Size(249, 38);
-            this.txtQtdDisponivel.TabIndex = 15;
+            txtQtdDisponivel.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtQtdDisponivel.Location = new Point(539, 231);
+            txtQtdDisponivel.Name = "txtQtdDisponivel";
+            txtQtdDisponivel.Size = new Size(249, 38);
+            txtQtdDisponivel.TabIndex = 15;
             // 
             // btSalvar
             // 
@@ -121,19 +123,39 @@
             btCancelar.Text = "Cancelar";
             btCancelar.UseVisualStyleBackColor = true;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(12, 272);
+            label5.Name = "label5";
+            label5.Size = new Size(93, 31);
+            label5.TabIndex = 20;
+            label5.Text = "Genêro:";
+            // 
+            // txtGenero
+            // 
+            txtGenero.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtGenero.Location = new Point(12, 313);
+            txtGenero.Name = "txtGenero";
+            txtGenero.Size = new Size(776, 38);
+            txtGenero.TabIndex = 19;
+            // 
             // FormCadastroLivros
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label5);
+            Controls.Add(txtGenero);
             Controls.Add(btCancelar);
             Controls.Add(btSalvar);
             Controls.Add(label4);
-            Controls.Add(this.txtQtdDisponivel);
+            Controls.Add(txtQtdDisponivel);
             Controls.Add(label3);
-            Controls.Add(this.txtAutor);
+            Controls.Add(txtAutor);
             Controls.Add(label2);
-            Controls.Add(this.txtTitulo);
+            Controls.Add(txtTitulo);
             Controls.Add(label1);
             Name = "FormCadastroLivros";
             Text = "CadastroLivros";
@@ -152,5 +174,7 @@
         private TextBox txtQtdDisponivel;
         private Button btSalvar;
         private Button btCancelar;
+        private Label label5;
+        private TextBox txtGenero;
     }
 }

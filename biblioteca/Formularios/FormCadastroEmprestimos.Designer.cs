@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             label6 = new Label();
-            textBox2 = new TextBox();
+            this.txtAutor = new TextBox();
             label5 = new Label();
-            textBox1 = new TextBox();
+            txtTitulo = new TextBox();
             btCancelar = new Button();
             btSalvar = new Button();
             label4 = new Label();
@@ -64,13 +64,13 @@
             label6.TabIndex = 42;
             label6.Text = "Autor:";
             // 
-            // textBox2
+            // txtAutor
             // 
-            textBox2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(812, 100);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(266, 38);
-            textBox2.TabIndex = 41;
+            this.txtAutor.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            this.txtAutor.Location = new Point(812, 100);
+            this.txtAutor.Name = "txtAutor";
+            this.txtAutor.Size = new Size(266, 38);
+            this.txtAutor.TabIndex = 41;
             // 
             // label5
             // 
@@ -82,13 +82,13 @@
             label5.TabIndex = 40;
             label5.Text = "Titulo:";
             // 
-            // textBox1
+            // txtTitulo
             // 
-            textBox1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(408, 100);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(389, 38);
-            textBox1.TabIndex = 39;
+            txtTitulo.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtTitulo.Location = new Point(408, 100);
+            txtTitulo.Name = "txtTitulo";
+            txtTitulo.Size = new Size(389, 38);
+            txtTitulo.TabIndex = 39;
             // 
             // btCancelar
             // 
@@ -283,9 +283,9 @@
             Controls.Add(cbLivro);
             Controls.Add(comboBox1);
             Controls.Add(label6);
-            Controls.Add(textBox2);
+            Controls.Add(this.txtAutor);
             Controls.Add(label5);
-            Controls.Add(textBox1);
+            Controls.Add(txtTitulo);
             Controls.Add(btCancelar);
             Controls.Add(btSalvar);
             Controls.Add(label4);
@@ -302,9 +302,9 @@
         #endregion
 
         private Label label6;
-        private TextBox textBox2;
+        private TextBox txtAutor;
         private Label label5;
-        private TextBox textBox1;
+        private TextBox txtTitulo;
         private Button btCancelar;
         private Button btSalvar;
         private Label label4;
