@@ -33,8 +33,10 @@
             label2 = new Label();
             txtTitulo = new TextBox();
             label1 = new Label();
-            btSalvar = new Button();
+            btFiltrar = new Button();
             label3 = new Label();
+            dgvLivros = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvLivros).BeginInit();
             SuspendLayout();
             // 
             // label5
@@ -83,14 +85,14 @@
             label1.Text = "Listar Livros";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btSalvar
+            // btFiltrar
             // 
-            btSalvar.Location = new Point(619, 240);
-            btSalvar.Name = "btSalvar";
-            btSalvar.Size = new Size(169, 38);
-            btSalvar.TabIndex = 27;
-            btSalvar.Text = "Salvar";
-            btSalvar.UseVisualStyleBackColor = true;
+            btFiltrar.Location = new Point(326, 235);
+            btFiltrar.Name = "btFiltrar";
+            btFiltrar.Size = new Size(169, 38);
+            btFiltrar.TabIndex = 27;
+            btFiltrar.Text = "Filtrar";
+            btFiltrar.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -101,13 +103,23 @@
             label3.TabIndex = 28;
             label3.Text = "Filtros";
             // 
+            // dgvLivros
+            // 
+            dgvLivros.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvLivros.Location = new Point(28, 288);
+            dgvLivros.Name = "dgvLivros";
+            dgvLivros.RowHeadersWidth = 51;
+            dgvLivros.Size = new Size(749, 150);
+            dgvLivros.TabIndex = 29;
+            // 
             // FormListarLivros
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(dgvLivros);
             Controls.Add(label3);
-            Controls.Add(btSalvar);
+            Controls.Add(btFiltrar);
             Controls.Add(label1);
             Controls.Add(label5);
             Controls.Add(txtGenero);
@@ -115,6 +127,7 @@
             Controls.Add(txtTitulo);
             Name = "FormListarLivros";
             Text = "ListarLivros";
+            ((System.ComponentModel.ISupportInitialize)dgvLivros).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -126,7 +139,8 @@
         private Label label2;
         private TextBox txtTitulo;
         private Label label1;
-        private Button btSalvar;
+        private Button btFiltrar;
         private Label label3;
+        private DataGridView dgvLivros;
     }
 }
