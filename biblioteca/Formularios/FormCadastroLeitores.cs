@@ -5,6 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using biblioteca.Models;
+using biblioteca.contexto;
 
 namespace biblioteca.Formularios
 {
@@ -13,6 +15,28 @@ namespace biblioteca.Formularios
         public FormCadastroLeitores()
         {
             InitializeComponent();
+        }
+
+        private void btSalvar_Click(object sender, EventArgs e)
+        {
+            Leitores leitor=new Leitores();
+
+            leitor.nome=txtNome.Text;
+            leitor.curso=txtCurso.Text;
+            leitor.Matriula=Convert.ToInt32(txtMatricula.Text);
+            leitor.telefone = txtTelefone.Text;
+
+            ContextoBD.leitores.Add(leitor);
+
+            MessageBox.Show("Leitor salvo com sucesso", "ADS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            txtCurso.Clear();
+            txtNome.Clear();
+            txtMatricula.Clear();
+            txtTelefone.Clear();
+
+
+
         }
     }
 }

@@ -30,15 +30,15 @@
         {
             label2 = new Label();
             label6 = new Label();
-            this.txtTelefone = new TextBox();
+            txtTelefone = new TextBox();
             label5 = new Label();
-            this.txtCurso = new TextBox();
+            txtCurso = new TextBox();
             label4 = new Label();
-            this.txtMatricula = new TextBox();
+            txtMatricula = new TextBox();
             label1 = new Label();
-            this.txtNome = new TextBox();
+            txtNome = new TextBox();
             label3 = new Label();
-            this.txtQtdEmprestimos = new TextBox();
+            txtQtdEmprestimos = new TextBox();
             label7 = new Label();
             cbLeitor = new ComboBox();
             SuspendLayout();
@@ -65,11 +65,11 @@
             // 
             // txtTelefone
             // 
-            this.txtTelefone.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.txtTelefone.Location = new Point(539, 186);
-            this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new Size(249, 38);
-            this.txtTelefone.TabIndex = 38;
+            txtTelefone.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtTelefone.Location = new Point(539, 186);
+            txtTelefone.Name = "txtTelefone";
+            txtTelefone.Size = new Size(249, 38);
+            txtTelefone.TabIndex = 38;
             // 
             // label5
             // 
@@ -77,17 +77,17 @@
             label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.Location = new Point(12, 227);
             label5.Name = "label5";
-            label5.Size = new Size(67, 31);
+            label5.Size = new Size(77, 31);
             label5.TabIndex = 37;
             label5.Text = "Curso:";
             // 
             // txtCurso
             // 
-            this.txtCurso.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.txtCurso.Location = new Point(12, 268);
-            this.txtCurso.Name = "txtCurso";
-            this.txtCurso.Size = new Size(401, 38);
-            this.txtCurso.TabIndex = 36;
+            txtCurso.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtCurso.Location = new Point(12, 268);
+            txtCurso.Name = "txtCurso";
+            txtCurso.Size = new Size(401, 38);
+            txtCurso.TabIndex = 36;
             // 
             // label4
             // 
@@ -101,11 +101,11 @@
             // 
             // txtMatricula
             // 
-            this.txtMatricula.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.txtMatricula.Location = new Point(416, 101);
-            this.txtMatricula.Name = "txtMatricula";
-            this.txtMatricula.Size = new Size(372, 38);
-            this.txtMatricula.TabIndex = 34;
+            txtMatricula.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtMatricula.Location = new Point(416, 101);
+            txtMatricula.Name = "txtMatricula";
+            txtMatricula.Size = new Size(372, 38);
+            txtMatricula.TabIndex = 34;
             // 
             // label1
             // 
@@ -119,11 +119,11 @@
             // 
             // txtNome
             // 
-            this.txtNome.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.txtNome.Location = new Point(12, 186);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new Size(504, 38);
-            this.txtNome.TabIndex = 32;
+            txtNome.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNome.Location = new Point(12, 186);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(504, 38);
+            txtNome.TabIndex = 32;
             // 
             // label3
             // 
@@ -137,11 +137,11 @@
             // 
             // txtQtdEmprestimos
             // 
-            this.txtQtdEmprestimos.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.txtQtdEmprestimos.Location = new Point(439, 268);
-            this.txtQtdEmprestimos.Name = "txtQtdEmprestimos";
-            this.txtQtdEmprestimos.Size = new Size(349, 38);
-            this.txtQtdEmprestimos.TabIndex = 40;
+            txtQtdEmprestimos.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtQtdEmprestimos.Location = new Point(439, 268);
+            txtQtdEmprestimos.Name = "txtQtdEmprestimos";
+            txtQtdEmprestimos.Size = new Size(349, 38);
+            txtQtdEmprestimos.TabIndex = 40;
             // 
             // label7
             // 
@@ -161,6 +161,7 @@
             cbLeitor.Name = "cbLeitor";
             cbLeitor.Size = new Size(375, 39);
             cbLeitor.TabIndex = 46;
+            cbLeitor.SelectedIndexChanged += cbLeitor_SelectedIndexChanged;
             // 
             // FormConsultarLeitores
             // 
@@ -170,15 +171,15 @@
             Controls.Add(label7);
             Controls.Add(cbLeitor);
             Controls.Add(label3);
-            Controls.Add(this.txtQtdEmprestimos);
+            Controls.Add(txtQtdEmprestimos);
             Controls.Add(label6);
-            Controls.Add(this.txtTelefone);
+            Controls.Add(txtTelefone);
             Controls.Add(label5);
-            Controls.Add(this.txtCurso);
+            Controls.Add(txtCurso);
             Controls.Add(label4);
-            Controls.Add(this.txtMatricula);
+            Controls.Add(txtMatricula);
             Controls.Add(label1);
-            Controls.Add(this.txtNome);
+            Controls.Add(txtNome);
             Controls.Add(label2);
             Name = "FormConsultarLeitores";
             Text = "FormConsultarLeitores";

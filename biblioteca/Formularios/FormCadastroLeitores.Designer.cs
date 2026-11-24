@@ -31,12 +31,12 @@
             btCancelar = new Button();
             btSalvar = new Button();
             label4 = new Label();
-            this.txtMatricula = new TextBox();
+            txtMatricula = new TextBox();
             label2 = new Label();
-            this.txtNome = new TextBox();
+            txtNome = new TextBox();
             label1 = new Label();
             label5 = new Label();
-            this.txtCurso = new TextBox();
+            txtCurso = new TextBox();
             label6 = new Label();
             txtTelefone = new TextBox();
             SuspendLayout();
@@ -58,6 +58,7 @@
             btSalvar.TabIndex = 26;
             btSalvar.Text = "Salvar";
             btSalvar.UseVisualStyleBackColor = true;
+            btSalvar.Click += btSalvar_Click;
             // 
             // label4
             // 
@@ -71,11 +72,11 @@
             // 
             // txtMatricula
             // 
-            this.txtMatricula.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.txtMatricula.Location = new Point(539, 151);
-            this.txtMatricula.Name = "txtMatricula";
-            this.txtMatricula.Size = new Size(249, 38);
-            this.txtMatricula.TabIndex = 24;
+            txtMatricula.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtMatricula.Location = new Point(539, 151);
+            txtMatricula.Name = "txtMatricula";
+            txtMatricula.Size = new Size(249, 38);
+            txtMatricula.TabIndex = 24;
             // 
             // label2
             // 
@@ -89,11 +90,11 @@
             // 
             // txtNome
             // 
-            this.txtNome.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.txtNome.Location = new Point(12, 151);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new Size(504, 38);
-            this.txtNome.TabIndex = 20;
+            txtNome.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNome.Location = new Point(12, 151);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(504, 38);
+            txtNome.TabIndex = 20;
             // 
             // label1
             // 
@@ -117,11 +118,11 @@
             // 
             // txtCurso
             // 
-            this.txtCurso.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.txtCurso.Location = new Point(12, 233);
-            this.txtCurso.Name = "txtCurso";
-            this.txtCurso.Size = new Size(504, 38);
-            this.txtCurso.TabIndex = 28;
+            txtCurso.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtCurso.Location = new Point(12, 233);
+            txtCurso.Name = "txtCurso";
+            txtCurso.Size = new Size(504, 38);
+            txtCurso.TabIndex = 28;
             // 
             // label6
             // 
@@ -149,13 +150,13 @@
             Controls.Add(label6);
             Controls.Add(txtTelefone);
             Controls.Add(label5);
-            Controls.Add(this.txtCurso);
+            Controls.Add(txtCurso);
             Controls.Add(btCancelar);
             Controls.Add(btSalvar);
             Controls.Add(label4);
-            Controls.Add(this.txtMatricula);
+            Controls.Add(txtMatricula);
             Controls.Add(label2);
-            Controls.Add(this.txtNome);
+            Controls.Add(txtNome);
             Controls.Add(label1);
             Name = "FormCadastroLeitores";
             Text = "CadastroLeitores";
