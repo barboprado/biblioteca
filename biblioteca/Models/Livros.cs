@@ -4,11 +4,11 @@ using System.Text;
 
 namespace biblioteca.Models
 {
-    internal class Livros
+    public class Livros
     {
         public int Id { get; set; }
         public int  ExemplaresDisponiveis { get; set; }
-        public string Nome { get; set; }
+        public string Titulo { get; set; }
         public string Autor { get; set; }
         public string  Genero{ get; set; }
     }

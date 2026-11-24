@@ -4,7 +4,7 @@ using System.Text;
 
 namespace biblioteca.Models
 {
-    internal class Emprestimos
+    public class Emprestimos
     {
         public int Id { get; set; }
         public string NomeLeitor { get; set; }

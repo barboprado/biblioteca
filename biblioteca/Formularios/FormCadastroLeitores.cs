@@ -19,17 +19,18 @@ namespace biblioteca.Formularios
 
         private void btSalvar_Click(object sender, EventArgs e)
         {
-            Leitores leitor=new Leitores();
+            Leitores leitor = new Leitores();
 
-            leitor.nome=txtNome.Text;
-            leitor.curso=txtCurso.Text;
-            leitor.Matriula=Convert.ToInt32(txtMatricula.Text);
+            leitor.nome = txtNome.Text;
+            leitor.curso = txtCurso.Text;
+            leitor.Matriula = Convert.ToInt32(txtMatricula.Text);
             leitor.telefone = txtTelefone.Text;
 
             ContextoBD.leitores.Add(leitor);
 
             MessageBox.Show("Leitor salvo com sucesso", "ADS", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+            txtNome.Select();
             txtCurso.Clear();
             txtNome.Clear();
             txtMatricula.Clear();
@@ -37,6 +38,20 @@ namespace biblioteca.Formularios
 
 
 
+        }
+
+        private void FormCadastroLeitores_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btCancelar_Click(object sender, EventArgs e)
+        {
+            txtNome.Select();
+            txtCurso.Clear();
+            txtNome.Clear();
+            txtMatricula.Clear();
+            txtTelefone.Clear();
         }
     }
 }
