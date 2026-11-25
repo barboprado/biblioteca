@@ -8,8 +8,8 @@ namespace biblioteca.Models
     {
         public int Id { get; set; }
         public int  Matriula{ get; set; }
-        public string nome { get; set; }
-        public string telefone { get; set; }
-        public string curso { get; set; }
+        public string Nome { get; set; }
+        public string Telefone { get; set; }
+        public string Curso { get; set; }
     }
 }

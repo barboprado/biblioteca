@@ -168,6 +168,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "FormCadastroLivros";
             Text = "CadastroLivros";
+            Load += FormCadastroLivros_Load;
             ResumeLayout(false);
             PerformLayout();
         }

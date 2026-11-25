@@ -46,12 +46,12 @@
             label8 = new Label();
             txtMatricula = new TextBox();
             label9 = new Label();
-            textBox5 = new TextBox();
+            txtDataEmpr = new TextBox();
             label10 = new Label();
-            dataGridView1 = new DataGridView();
-            txtDataDevol = new TextBox();
+            dgvEmprestimo = new DataGridView();
+            txtDataDevolPrevist = new TextBox();
             btAdicionar = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvEmprestimo).BeginInit();
             SuspendLayout();
             // 
             // label6
@@ -111,6 +111,7 @@
             btSalvar.TabIndex = 37;
             btSalvar.Text = "Salvar";
             btSalvar.UseVisualStyleBackColor = true;
+            btSalvar.Click += btSalvar_Click;
             // 
             // label4
             // 
@@ -160,6 +161,7 @@
             cbLeitor.Name = "cbLeitor";
             cbLeitor.Size = new Size(442, 33);
             cbLeitor.TabIndex = 43;
+            cbLeitor.SelectedIndexChanged += cbLeitor_SelectedIndexChanged;
             // 
             // cbLivro
             // 
@@ -230,14 +232,14 @@
             label9.TabIndex = 51;
             label9.Text = "Data do Emprestimo:";
             // 
-            // textBox5
+            // txtDataEmpr
             // 
-            textBox5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox5.Location = new Point(253, 199);
-            textBox5.Margin = new Padding(3, 2, 3, 2);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(233, 32);
-            textBox5.TabIndex = 50;
+            txtDataEmpr.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtDataEmpr.Location = new Point(253, 199);
+            txtDataEmpr.Margin = new Padding(3, 2, 3, 2);
+            txtDataEmpr.Name = "txtDataEmpr";
+            txtDataEmpr.Size = new Size(233, 32);
+            txtDataEmpr.TabIndex = 50;
             // 
             // label10
             // 
@@ -249,24 +251,24 @@
             label10.TabIndex = 53;
             label10.Text = "Data prevista para devolução:";
             // 
-            // dataGridView1
+            // dgvEmprestimo
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(10, 243);
-            dataGridView1.Margin = new Padding(3, 2, 3, 2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(933, 116);
-            dataGridView1.TabIndex = 54;
+            dgvEmprestimo.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvEmprestimo.Location = new Point(10, 243);
+            dgvEmprestimo.Margin = new Padding(3, 2, 3, 2);
+            dgvEmprestimo.Name = "dgvEmprestimo";
+            dgvEmprestimo.RowHeadersWidth = 51;
+            dgvEmprestimo.Size = new Size(933, 116);
+            dgvEmprestimo.TabIndex = 54;
             // 
-            // txtDataDevol
+            // txtDataDevolPrevist
             // 
-            txtDataDevol.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtDataDevol.Location = new Point(502, 199);
-            txtDataDevol.Margin = new Padding(3, 2, 3, 2);
-            txtDataDevol.Name = "txtDataDevol";
-            txtDataDevol.Size = new Size(233, 32);
-            txtDataDevol.TabIndex = 55;
+            txtDataDevolPrevist.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtDataDevolPrevist.Location = new Point(502, 199);
+            txtDataDevolPrevist.Margin = new Padding(3, 2, 3, 2);
+            txtDataDevolPrevist.Name = "txtDataDevolPrevist";
+            txtDataDevolPrevist.Size = new Size(233, 32);
+            txtDataDevolPrevist.TabIndex = 55;
             // 
             // btAdicionar
             // 
@@ -277,6 +279,7 @@
             btAdicionar.TabIndex = 56;
             btAdicionar.Text = "Adicionar (+)";
             btAdicionar.UseVisualStyleBackColor = true;
+            btAdicionar.Click += btAdicionar_Click;
             // 
             // FormCadastroEmprestimos
             // 
@@ -284,11 +287,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(954, 432);
             Controls.Add(btAdicionar);
-            Controls.Add(txtDataDevol);
-            Controls.Add(dataGridView1);
+            Controls.Add(txtDataDevolPrevist);
+            Controls.Add(dgvEmprestimo);
             Controls.Add(label10);
             Controls.Add(label9);
-            Controls.Add(textBox5);
+            Controls.Add(txtDataEmpr);
             Controls.Add(label8);
             Controls.Add(txtMatricula);
             Controls.Add(label7);
@@ -309,7 +312,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "FormCadastroEmprestimos";
             Text = "CadastroEmprestimos";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvEmprestimo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -334,10 +337,10 @@
         private Label label8;
         private TextBox txtMatricula;
         private Label label9;
-        private TextBox textBox5;
+        private TextBox txtDataEmpr;
         private Label label10;
-        private DataGridView dataGridView1;
-        private TextBox txtDataDevol;
+        private DataGridView dgvEmprestimo;
+        private TextBox txtDataDevolPrevist;
         private Button btAdicionar;
     }
 }

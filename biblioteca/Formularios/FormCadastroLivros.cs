@@ -6,12 +6,12 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using biblioteca.contexto;
-using biblioteca.Models;
 
 namespace biblioteca.Formularios
 {
     public partial class FormCadastroLivros : Form
     {
+        static int id = 1;
         public FormCadastroLivros()
         {
             InitializeComponent();
@@ -19,14 +19,8 @@ namespace biblioteca.Formularios
 
         private void btSalvar_Click(object sender, EventArgs e)
         {
-            Livros livro = new Livros();
-
-            livro.Titulo = txtTitulo.Text;
-            livro.Autor = txtAutor.Text;
-            livro.Genero = txtGenero.Text;
-            livro.ExemplaresDisponiveis = Convert.ToInt32(txtQtdDisponivel.Text);
-
-            ContextoBD.livro.Add(livro);
+            ContextoBD.livros.Add((Id: id, Titulo: txtTitulo.Text, Autor: txtAutor.Text, Genero: txtGenero.Text, QuantidadeDisponivel: Convert.ToInt32(txtQtdDisponivel.Text)));
+            id++;
 
             MessageBox.Show("Livro salvo com sucesso", "ADS", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -44,6 +38,11 @@ namespace biblioteca.Formularios
             txtGenero.Clear();
             txtQtdDisponivel.Clear();
             txtTitulo.Clear();
+        }
+
+        private void FormCadastroLivros_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

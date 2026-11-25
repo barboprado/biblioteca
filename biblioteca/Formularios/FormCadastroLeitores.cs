@@ -21,10 +21,10 @@ namespace biblioteca.Formularios
         {
             Leitores leitor = new Leitores();
 
-            leitor.nome = txtNome.Text;
-            leitor.curso = txtCurso.Text;
+            leitor.Nome = txtNome.Text;
+            leitor.Curso = txtCurso.Text;
             leitor.Matriula = Convert.ToInt32(txtMatricula.Text);
-            leitor.telefone = txtTelefone.Text;
+            leitor.Telefone = txtTelefone.Text;
 
             ContextoBD.leitores.Add(leitor);
 

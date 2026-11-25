@@ -1,3 +1,4 @@
+using biblioteca.contexto;
 using biblioteca.Formularios;
 
 namespace biblioteca
@@ -28,11 +29,38 @@ namespace biblioteca
 
         private void btEmprestimo_Click(object sender, EventArgs e)
         {
-            FormCadastroEmprestimos form = new FormCadastroEmprestimos();
+            if (ContextoBD.livros.Count == 0 || ContextoBD.leitores.Count == 0)
+            {
+                MessageBox.Show("Não existe livro/Leitor cadastrado", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else
+            {
+                FormCadastroEmprestimos form = new FormCadastroEmprestimos();
             form.ShowDialog();
+            }
+            
         }
 
         private void btListarLivros_Click(object sender, EventArgs e)
+        {
+            FormListarLivros form = new FormListarLivros();
+            form.ShowDialog();
+        }
+
+        private void btConsultarLeitor_Click(object sender, EventArgs e)
+        {
+            FormConsultarLeitores form = new FormConsultarLeitores();
+            form.ShowDialog();
+        }
+
+        private void btListarEmprestimos_Click_1(object sender, EventArgs e)
+        {
+            FormListarEmprestimos form = new FormListarEmprestimos();
+            form.ShowDialog();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
