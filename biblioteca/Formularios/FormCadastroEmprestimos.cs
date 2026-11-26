@@ -116,7 +116,12 @@ namespace biblioteca.Formularios
                 foreach (var item in carrinho)
                 {
                     ContextoBD.emprestimos.Add(item);
-                    
+
+                    int i = ContextoBD.livros.FindIndex(x => x.Titulo == item.Titulo);
+                    var livro = ContextoBD.livros[i];
+                    livro.QuantidadeDisponivel--;
+                    ContextoBD.livros[i] = livro;
+
                 }
             }
         }
