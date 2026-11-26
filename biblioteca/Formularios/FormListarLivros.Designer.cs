@@ -36,6 +36,7 @@
             btFiltrar = new Button();
             label3 = new Label();
             dgvLivros = new DataGridView();
+            btLimpar = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvLivros).BeginInit();
             SuspendLayout();
             // 
@@ -87,12 +88,13 @@
             // 
             // btFiltrar
             // 
-            btFiltrar.Location = new Point(326, 235);
+            btFiltrar.Location = new Point(226, 235);
             btFiltrar.Name = "btFiltrar";
             btFiltrar.Size = new Size(169, 38);
             btFiltrar.TabIndex = 27;
             btFiltrar.Text = "Filtrar";
             btFiltrar.UseVisualStyleBackColor = true;
+            btFiltrar.Click += btFiltrar_Click;
             // 
             // label3
             // 
@@ -112,11 +114,22 @@
             dgvLivros.Size = new Size(749, 150);
             dgvLivros.TabIndex = 29;
             // 
+            // btLimpar
+            // 
+            btLimpar.Location = new Point(427, 235);
+            btLimpar.Name = "btLimpar";
+            btLimpar.Size = new Size(169, 38);
+            btLimpar.TabIndex = 30;
+            btLimpar.Text = "Limpar";
+            btLimpar.UseVisualStyleBackColor = true;
+            btLimpar.Click += btLimpar_Click;
+            // 
             // FormListarLivros
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btLimpar);
             Controls.Add(dgvLivros);
             Controls.Add(label3);
             Controls.Add(btFiltrar);
@@ -142,5 +155,6 @@
         private Button btFiltrar;
         private Label label3;
         private DataGridView dgvLivros;
+        private Button btLimpar;
     }
 }
