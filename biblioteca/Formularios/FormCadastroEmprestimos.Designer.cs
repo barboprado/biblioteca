@@ -58,56 +58,53 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(710, 44);
+            label6.Location = new Point(811, 59);
             label6.Name = "label6";
-            label6.Size = new Size(63, 25);
+            label6.Size = new Size(76, 31);
             label6.TabIndex = 42;
             label6.Text = "Autor:";
             // 
             // txtAutor
             // 
             txtAutor.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtAutor.Location = new Point(710, 75);
-            txtAutor.Margin = new Padding(3, 2, 3, 2);
+            txtAutor.Location = new Point(811, 100);
             txtAutor.Name = "txtAutor";
-            txtAutor.Size = new Size(233, 32);
+            txtAutor.Size = new Size(266, 38);
             txtAutor.TabIndex = 41;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(357, 48);
+            label5.Location = new Point(408, 64);
             label5.Name = "label5";
-            label5.Size = new Size(64, 25);
+            label5.Size = new Size(77, 31);
             label5.TabIndex = 40;
             label5.Text = "Titulo:";
             // 
             // txtTitulo
             // 
             txtTitulo.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtTitulo.Location = new Point(357, 75);
-            txtTitulo.Margin = new Padding(3, 2, 3, 2);
+            txtTitulo.Location = new Point(408, 100);
             txtTitulo.Name = "txtTitulo";
-            txtTitulo.Size = new Size(341, 32);
+            txtTitulo.Size = new Size(389, 38);
             txtTitulo.TabIndex = 39;
             // 
             // btCancelar
             // 
-            btCancelar.Location = new Point(627, 394);
-            btCancelar.Margin = new Padding(3, 2, 3, 2);
+            btCancelar.Location = new Point(717, 525);
             btCancelar.Name = "btCancelar";
-            btCancelar.Size = new Size(148, 28);
+            btCancelar.Size = new Size(169, 37);
             btCancelar.TabIndex = 38;
             btCancelar.Text = "Cancelar";
             btCancelar.UseVisualStyleBackColor = true;
+            btCancelar.Click += btCancelar_Click;
             // 
             // btSalvar
             // 
-            btSalvar.Location = new Point(795, 394);
-            btSalvar.Margin = new Padding(3, 2, 3, 2);
+            btSalvar.Location = new Point(909, 525);
             btSalvar.Name = "btSalvar";
-            btSalvar.Size = new Size(148, 28);
+            btSalvar.Size = new Size(169, 37);
             btSalvar.TabIndex = 37;
             btSalvar.Text = "Salvar";
             btSalvar.UseVisualStyleBackColor = true;
@@ -117,37 +114,36 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(10, 108);
+            label4.Location = new Point(11, 144);
             label4.Name = "label4";
-            label4.Size = new Size(78, 25);
+            label4.Size = new Size(93, 31);
             label4.TabIndex = 36;
             label4.Text = "Genero:";
             // 
             // txtGenero
             // 
             txtGenero.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtGenero.Location = new Point(10, 139);
-            txtGenero.Margin = new Padding(3, 2, 3, 2);
+            txtGenero.Location = new Point(11, 185);
             txtGenero.Name = "txtGenero";
-            txtGenero.Size = new Size(218, 32);
+            txtGenero.Size = new Size(249, 38);
             txtGenero.TabIndex = 35;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(502, 112);
+            label2.Location = new Point(574, 149);
             label2.Name = "label2";
-            label2.Size = new Size(162, 25);
+            label2.Size = new Size(194, 31);
             label2.TabIndex = 34;
             label2.Text = "Selecione o leitor:";
             // 
             // label1
             // 
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(10, 8);
+            label1.Location = new Point(11, 11);
             label1.Name = "label1";
-            label1.Size = new Size(933, 36);
+            label1.Size = new Size(1066, 48);
             label1.TabIndex = 32;
             label1.Text = "Cadastrar Emprestimo";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -156,10 +152,9 @@
             // 
             cbLeitor.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cbLeitor.FormattingEnabled = true;
-            cbLeitor.Location = new Point(502, 138);
-            cbLeitor.Margin = new Padding(3, 2, 3, 2);
+            cbLeitor.Location = new Point(574, 184);
             cbLeitor.Name = "cbLeitor";
-            cbLeitor.Size = new Size(442, 33);
+            cbLeitor.Size = new Size(505, 39);
             cbLeitor.TabIndex = 43;
             cbLeitor.SelectedIndexChanged += cbLeitor_SelectedIndexChanged;
             // 
@@ -167,10 +162,9 @@
             // 
             cbLivro.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cbLivro.FormattingEnabled = true;
-            cbLivro.Location = new Point(10, 75);
-            cbLivro.Margin = new Padding(3, 2, 3, 2);
+            cbLivro.Location = new Point(11, 100);
             cbLivro.Name = "cbLivro";
-            cbLivro.Size = new Size(329, 33);
+            cbLivro.Size = new Size(375, 39);
             cbLivro.TabIndex = 44;
             cbLivro.SelectedIndexChanged += cbLivro_SelectedIndexChanged;
             // 
@@ -178,9 +172,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(10, 50);
+            label3.Location = new Point(11, 67);
             label3.Name = "label3";
-            label3.Size = new Size(155, 25);
+            label3.Size = new Size(185, 31);
             label3.TabIndex = 45;
             label3.Text = "Selecione o livro:";
             // 
@@ -188,94 +182,88 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(253, 108);
+            label7.Location = new Point(289, 144);
             label7.Name = "label7";
-            label7.Size = new Size(209, 25);
+            label7.Size = new Size(254, 31);
             label7.TabIndex = 47;
             label7.Text = "Exemplares Disponiveis";
             // 
             // txtQntDisponivel
             // 
             txtQntDisponivel.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtQntDisponivel.Location = new Point(253, 139);
-            txtQntDisponivel.Margin = new Padding(3, 2, 3, 2);
+            txtQntDisponivel.Location = new Point(289, 185);
             txtQntDisponivel.Name = "txtQntDisponivel";
-            txtQntDisponivel.Size = new Size(233, 32);
+            txtQntDisponivel.Size = new Size(266, 38);
             txtQntDisponivel.TabIndex = 46;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(10, 168);
+            label8.Location = new Point(11, 224);
             label8.Name = "label8";
-            label8.Size = new Size(176, 25);
+            label8.Size = new Size(213, 31);
             label8.TabIndex = 49;
             label8.Text = "Matricula do Leitor:";
             // 
             // txtMatricula
             // 
             txtMatricula.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtMatricula.Location = new Point(10, 199);
-            txtMatricula.Margin = new Padding(3, 2, 3, 2);
+            txtMatricula.Location = new Point(11, 265);
             txtMatricula.Name = "txtMatricula";
-            txtMatricula.Size = new Size(218, 32);
+            txtMatricula.Size = new Size(249, 38);
             txtMatricula.TabIndex = 48;
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(253, 169);
+            label9.Location = new Point(289, 225);
             label9.Name = "label9";
-            label9.Size = new Size(187, 25);
+            label9.Size = new Size(229, 31);
             label9.TabIndex = 51;
             label9.Text = "Data do Emprestimo:";
             // 
             // txtDataEmpr
             // 
             txtDataEmpr.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtDataEmpr.Location = new Point(253, 199);
-            txtDataEmpr.Margin = new Padding(3, 2, 3, 2);
+            txtDataEmpr.Location = new Point(289, 265);
             txtDataEmpr.Name = "txtDataEmpr";
-            txtDataEmpr.Size = new Size(233, 32);
+            txtDataEmpr.Size = new Size(266, 38);
             txtDataEmpr.TabIndex = 50;
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.Location = new Point(502, 169);
+            label10.Location = new Point(574, 225);
             label10.Name = "label10";
-            label10.Size = new Size(261, 25);
+            label10.Size = new Size(317, 31);
             label10.TabIndex = 53;
             label10.Text = "Data prevista para devolução:";
             // 
             // dgvEmprestimo
             // 
             dgvEmprestimo.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvEmprestimo.Location = new Point(10, 243);
-            dgvEmprestimo.Margin = new Padding(3, 2, 3, 2);
+            dgvEmprestimo.Location = new Point(11, 324);
             dgvEmprestimo.Name = "dgvEmprestimo";
             dgvEmprestimo.RowHeadersWidth = 51;
-            dgvEmprestimo.Size = new Size(933, 116);
+            dgvEmprestimo.Size = new Size(1066, 155);
             dgvEmprestimo.TabIndex = 54;
             // 
             // txtDataDevolPrevist
             // 
             txtDataDevolPrevist.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtDataDevolPrevist.Location = new Point(502, 199);
-            txtDataDevolPrevist.Margin = new Padding(3, 2, 3, 2);
+            txtDataDevolPrevist.Location = new Point(574, 265);
             txtDataDevolPrevist.Name = "txtDataDevolPrevist";
-            txtDataDevolPrevist.Size = new Size(233, 32);
+            txtDataDevolPrevist.Size = new Size(266, 38);
             txtDataDevolPrevist.TabIndex = 55;
             // 
             // btAdicionar
             // 
-            btAdicionar.Location = new Point(795, 199);
-            btAdicionar.Margin = new Padding(3, 2, 3, 2);
+            btAdicionar.Location = new Point(909, 265);
             btAdicionar.Name = "btAdicionar";
-            btAdicionar.Size = new Size(148, 28);
+            btAdicionar.Size = new Size(169, 37);
             btAdicionar.TabIndex = 56;
             btAdicionar.Text = "Adicionar (+)";
             btAdicionar.UseVisualStyleBackColor = true;
@@ -283,9 +271,9 @@
             // 
             // FormCadastroEmprestimos
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(954, 432);
+            ClientSize = new Size(1090, 576);
             Controls.Add(btAdicionar);
             Controls.Add(txtDataDevolPrevist);
             Controls.Add(dgvEmprestimo);
@@ -309,7 +297,6 @@
             Controls.Add(txtGenero);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "FormCadastroEmprestimos";
             Text = "CadastroEmprestimos";
             ((System.ComponentModel.ISupportInitialize)dgvEmprestimo).EndInit();

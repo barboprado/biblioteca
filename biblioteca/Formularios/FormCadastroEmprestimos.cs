@@ -69,34 +69,35 @@ namespace biblioteca.Formularios
             if (carrinho.Count >= 3)
             {
                 MessageBox.Show("É possivel ter somente 3 livros por emprestimo", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
             }
             else if (carrinho.Any(x => x.Titulo == txtTitulo.Text))
             {
                 MessageBox.Show("Esse livro ja foi selecionado", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
             }
             else if (cbLivro.SelectedIndex == -1 || cbLeitor.SelectedIndex == -1)
             {
                 MessageBox.Show("Selecione o livro/Leitor", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                return;
             }
             else if (ContextoBD.livros[linhaSelectLivr].QuantidadeDisponivel == 0)
             {
                 MessageBox.Show("Livro com nenhum exemplar disponivel", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-                return;
             }
             else
             {
-                DateTime hoje = DateTime.Today;
-                DateTime previst = hoje.AddDays(7);
+                cbLeitor.Enabled = false;
+                DateTime hoje = DateTime.Today;     //
+                DateTime previst = hoje.AddDays(7); //Aqui como não lembravamos a forma de armazenar a data do pc no formulario, pesquisamos na internet
                 carrinho.Add((Id: id, Matricula: Convert.ToInt32(txtMatricula.Text), NomeLeitor: cbLeitor.Text, Titulo: txtTitulo.Text, Autor: txtAutor.Text, DataEmprestimo: hoje, DataDevolucaoPrevist: previst));
                 dgvEmprestimo.DataSource = carrinho.Select(x => new { x.Id, x.Matricula, x.Titulo, x.Autor, x.DataEmprestimo, x.DataDevolucaoPrevist }).ToList();
+
             }
-
-
+            cbLivro.SelectedIndex = -1;
+            txtAutor.Clear();
+            txtGenero.Clear();
+            txtTitulo.Clear();
+            cbLivro.Select();
+            txtQntDisponivel.Clear();
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
@@ -109,7 +110,6 @@ namespace biblioteca.Formularios
             if (carrinho.Count == 0)
             {
                 MessageBox.Show("Carrinho esta vazio", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
             }
             else
             {
@@ -123,7 +123,38 @@ namespace biblioteca.Formularios
                     ContextoBD.livros[i] = livro;
 
                 }
+                id++;
+                MessageBox.Show("Emprestimo salvo com sucesso.", "ADS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dgvEmprestimo.DataSource = null;
+                cbLeitor.Enabled = true;
+
+                carrinho.Clear();
+                cbLivro.SelectedIndex = -1;
+                cbLeitor.SelectedIndex = -1;
+                txtAutor.Clear();
+                txtGenero.Clear();
+                txtTitulo.Clear();
+                cbLivro.Select();
+                txtQntDisponivel.Clear();
+                txtMatricula.Clear();
+
             }
+        }
+
+        private void btCancelar_Click(object sender, EventArgs e)
+        {
+            carrinho.Clear();
+            dgvEmprestimo.DataSource = null;
+            cbLeitor.Enabled = true;
+
+            cbLivro.SelectedIndex = -1;
+            cbLeitor.SelectedIndex = -1;
+            txtTitulo.Clear();
+            txtAutor.Clear();
+            txtGenero.Clear();
+            txtQntDisponivel.Clear();
+            txtMatricula.Clear();
+            cbLivro.Select();
         }
     }
 }
